@@ -52,6 +52,7 @@ We use the [MNIST Dataset](https://keras.io/api/datasets/mnist/) from `keras`.
 
 The dataset is automatically downloaded using `keras`:
 ```bash
+from keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 ```
 
