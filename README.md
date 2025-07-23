@@ -62,21 +62,28 @@ from keras.datasets import mnist
 ### 🔧 Data Preprocessing
 - Reshape 28x28 images to flat 784-length vectors
 - Normalize pixel values (0-255 → 0-1)
-- One-hot encode labels with to_categorical
+- One-hot encode labels with `to_categorical`
 
 ### 🏗️ Model Architecture
 Model: Sequential
- ┌────────────┬────────────┬────────────┐
- │ Layer      │ Output     │ Parameters │
- ├────────────┼────────────┼────────────┤
- │ Dense (ReLU, 512 units) │ (None,512) │ 401,920     │
- │ Dense (Softmax, 10 classes) │ (None,10) │   5,130     │
- └────────────┴────────────┴────────────┘
+
+ Layer:
+ - Dense (ReLU, 512 units)
+ - Dense (Softmax, 10 classes)
+
+ Output:
+ - (None,512)
+ - (None,10)
+
+ Parameters:
+ - 401,920
+ - 5,130 
+
 Total parameters: 407,050
 
-- Optimizer: Adam
-- Loss: CategoricalCrossentropy
-- Metrics: Accuracy
+- Optimizer: `Adam`
+- Loss: `CategoricalCrossentropy`
+- Metrics: `Accuracy`
 - Trained for 12 epochs with batch size = 1000
 
 ### 📈 Training Results
@@ -84,8 +91,8 @@ Total parameters: 407,050
 - Visualized training loss and accuracy over epochs
 
 ### 🔮 Prediction Example
-- Predict test set using model.predict()
-- Use np.argmax() to extract predicted digit
+- Predict test set using `model.predict()`
+- Use `np.argmax()` to extract predicted digit
 - Visualize prediction on sample test images
 
 
@@ -100,9 +107,9 @@ Total parameters: 407,050
 - 3 Convolutional layers with ReLU
 - MaxPooling after each Conv layer
 - Flatten + Dense (ReLU) + Dense (Softmax)
-- Optimizer: RMSProp
-- Loss: CategoricalCrossentropy
-- Metric: Accuracy
+- Optimizer: `RMSProp`
+- Loss: `CategoricalCrossentropy`
+- Metric: `Accuracy`
 
 ### 📈 Results
 - Test accuracy: > 99%
