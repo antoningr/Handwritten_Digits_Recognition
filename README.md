@@ -10,12 +10,14 @@ We implement and compare:
 
 This helps understand the strengths, limitations, and trade-offs of each architecture in image classification tasks.
 
+There's also an interactive Gradio web interface to test digit recognition directly from hand-drawn input. You can draw a digit on a canvas or upload an image, and the trained model will predict the digit in real-time.
+
 
 ## 📸 Example Outputs
 
-| Handwritten Digits Recognition Example                                                |
-| ------------------------------------------------------------------------------------- |
-| ![handwritten_digits_recognition_example](handwritten_digits_recognition_example.jpg) |
+| Handwritten Digits Recognition Example                                                               |
+| ---------------------------------------------------------------------------------------------------- |
+| ![handwritten_digits_recognition_example](example_images\handwritten_digits_recognition_example.jpg) |
 
 
 ## 🛠️ Requirements
@@ -137,5 +139,27 @@ Total parameters: 407,050
     - ❌ More complex and computationally intensive
 
 
-## 📌 Recommendation: 
+## 📌 Recommendation
 - Use CNN for real-world handwritten digit recognition due to its superior performance and robustness.
+
+
+
+# 🖼️ Application Interactive - Gradio
+
+| Handwritten Digits Recognition Example                                              |
+| ----------------------------------------------------------------------------------- |
+| ![gradio_example](example_images\gradio_handwritten_digits_recognition_example.jpg) |
+
+
+## 🛠️ Requirements for the Gradio App
+
+Install the necessary libraries:
+
+```bash
+pip install gradio opencv-python
+```
+
+
+## ▶️ How to Launch the App
+
+This will start a local web server [http://localhost:7860](http://localhost:7860), and you can interact with the model in your browser.
