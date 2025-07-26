@@ -17,7 +17,7 @@ There's also an interactive Gradio web interface to test digit recognition direc
 
 | Handwritten Digits Recognition Example                                                               |
 | ---------------------------------------------------------------------------------------------------- |
-| ![handwritten_digits_recognition_example](example_images\handwritten_digits_recognition_example.jpg) |
+| ![handwritten_digits_recognition_example](example_images/handwritten_digits_recognition_example.jpg) |
 
 
 ## 🛠️ Requirements
@@ -148,7 +148,7 @@ Total parameters: 407,050
 
 | Handwritten Digits Recognition Example                                              |
 | ----------------------------------------------------------------------------------- |
-| ![gradio_example](example_images\gradio_handwritten_digits_recognition_example.jpg) |
+| ![gradio_example](example_images/gradio_handwritten_digits_recognition_example.jpg) |
 
 
 ## 🛠️ Requirements for the Gradio App
